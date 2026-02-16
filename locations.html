@@ -1,38 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+        
+        function trackGetDirections() {
+            gtag('event', 'get_directions', {
+                'location': 'balibago_angeles',
+                'landmark': 'system_plus_abacan'
+            });
+        }
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Find Sari-Sari Filipino Coffee locations in Metro Manila. Visit our convenient stores in Makati and BGC for authentic Philippine coffee and hospitality.">
-    <meta name="keywords" content="Sari-Sari locations, Filipino coffee shops, Balibago Angeles coffee, Philippine coffee stores">
-    <meta property="og:title" content="Locations - Sari-Sari Filipino Coffee">
-    <meta property="og:description" content="Find Sari-Sari Filipino Coffee locations in Metro Manila. Visit our convenient stores in Makati and BGC for authentic Philippine coffee and hospitality.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1509042239860-f550ce710b93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBzaG9wfGVufDF8MHx8fHwxNzY5MDQ3ODQxfDA&ixlib=rb-4.1.0&q=80&w=1200">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Find Sari-Sari Bean in Balibago, Angeles City near System Plus College Foundation, beside Abacan Bridge. Directions, hours, parking info. Open 7AM-10PM daily.">
+    <meta name="keywords" content="sari-sari bean location, coffee shop balibago address, near system plus college, abacan bridge coffee, angeles city cafe directions">
+    
+    <!-- Geo-Targeting -->
+    <meta name="geo.region" content="PH-PAM">
+    <meta name="geo.placename" content="Balibago, Angeles City">
+    <meta name="geo.position" content="15.1449;120.5910">
+    <meta name="ICBM" content="15.1449, 120.5910">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Visit Our Balibago Location | Sari-Sari Bean Coffee Shop Angeles City">
+    <meta property="og:description" content="Find us in Balibago near System Plus College & Abacan Bridge. Best coffee shop in Angeles City.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=1200">
     <meta property="og:url" content="https://saribeans.store/locations.html">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Locations - Sari-Sari Filipino Coffee">
-    <meta name="twitter:description" content="Find Sari-Sari Filipino Coffee locations in Metro Manila. Visit our convenient stores in Makati and BGC for authentic Philippine coffee and hospitality.">
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1509042239860-f550ce710b93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBzaG9wfGVufDF8MHx8fHwxNzY5MDQ3ODQxfDA&ixlib=rb-4.1.0&q=80&w=1200">
+    
     <link rel="canonical" href="https://saribeans.store/locations.html">
-    <meta name="robots" content="index, follow">
-    <title>Sari-Sari - Filipino Coffee</title>
+    
+    <title>Visit Our Balibago Location | Sari-Sari Bean Coffee Shop Angeles City</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RPKXR83PEM"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-RPKXR83PEM');
-    </script>
-
 <body>
     
     <header class="header">
@@ -40,8 +52,8 @@
             <a href="index.html" class="logo">
                 <div class="logo-icon">☕</div>
                 <div class="logo-text">
-                    <h1>Sari-Sari</h1>
-                    <p>Filipino Coffee</p>
+                    <h1 style="font-size: 1.25rem; margin: 0;">Sari-Sari Bean</h1>
+                    <p style="font-size: 0.75rem; margin: 0;">Angeles City</p>
                 </div>
             </a>
 
@@ -49,9 +61,9 @@
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="menu.html">Menu</a>
-                <a href="locations.html">Locations</a>
+                <a href="locations.html" aria-current="page">Visit Balibago</a>
                 <a href="contact.html">Contact</a>
-                <a href="cart.html"> My Cart</a>
+                <a href="cart.html">🛒 Cart</a>
             </nav>
 
             <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
@@ -63,123 +75,280 @@
             <a href="index.html" onclick="toggleMobileMenu()">Home</a>
             <a href="about.html" onclick="toggleMobileMenu()">About</a>
             <a href="menu.html" onclick="toggleMobileMenu()">Menu</a>
-            <a href="locations.html" onclick="toggleMobileMenu()">Locations</a>
+            <a href="locations.html" onclick="toggleMobileMenu()">Visit Balibago</a>
             <a href="contact.html" onclick="toggleMobileMenu()">Contact</a>
         </nav>
     </header>
 
    <main>
-
-    
     <section id="locations" class="section section-bg-cream">
         <div class="container">
             <div class="section-header">
                 <div class="section-badge">VISIT US</div>
-                <h2 class="section-title">Our Locations</h2>
+                <h1 class="section-title">Visit Our Coffee Shop in Balibago, Angeles City</h1>
                 <p class="section-description">
-                    Find us in Metro Manila's most vibrant neighborhoods
+                    Find the best coffee in <strong>Angeles City</strong> at our <strong>Balibago location</strong> 
+                    near System Plus College Foundation, beside Abacan Bridge
                 </p>
             </div>
 
-            <div class="locations-grid" id="locations-grid">
+            <!-- MAIN LOCATION CARD -->
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div class="location-card" style="border: 3px solid var(--calamansi-gold);">
+                    <div class="location-image">
+                        <img src="https://images.unsplash.com/photo-1684006997322-6a5128f44816?w=800" 
+                             alt="Sari-Sari Bean coffee shop exterior in Balibago Angeles City near System Plus College beside Abacan Bridge"
+                             loading="eager"
+                             width="800"
+                             height="500">
+                    </div>
+                    <div class="location-content" style="padding: 2rem;">
+                        <h2 class="location-name" style="font-size: 1.75rem; margin-bottom: 1.5rem;">
+                            Sari-Sari Bean - Balibago, Angeles City
+                        </h2>
+                        
+                        <div class="location-details" style="gap: 1.25rem;">
+                            <div class="location-detail">
+                                <span class="location-icon" style="font-size: 1.5rem;">📍</span>
+                                <div>
+                                    <p class="location-text" style="font-weight: 600; font-size: 1.05rem;">
+                                        Balibago, Angeles City, Pampanga 2009
+                                    </p>
+                                    <p style="font-size: 0.95rem; color: rgba(61, 40, 23, 0.7); margin-top: 0.25rem;">
+                                        Near System Plus College Foundation<br>
+                                        Beside Abacan Bridge
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="location-detail">
+                                <span class="location-icon">🕒</span>
+                                <div>
+                                    <p class="location-text" style="font-weight: 600;">Hours of Operation</p>
+                                    <p style="font-size: 0.95rem; color: rgba(61, 40, 23, 0.7);">
+                                        Monday - Sunday: 7:00 AM - 10:00 PM<br>
+                                        <span style="color: var(--terracotta); font-weight: 500;">Open Daily • No Holidays</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="location-detail">
+                                <span class="location-icon">📞</span>
+                                <div>
+                                    <p class="location-text" style="font-weight: 600;">Contact</p>
+                                    <p style="font-size: 0.95rem;">
+                                        <a href="tel:+63456789123" style="color: var(--terracotta); text-decoration: none; font-weight: 500;">
+                                            +63 45 678 9123
+                                        </a><br>
+                                        <a href="mailto:hello@saribeans.store" style="color: var(--chocolate-brown); text-decoration: none;">
+                                            hello@saribeans.store
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="location-detail">
+                                <span class="location-icon">✨</span>
+                                <div>
+                                    <p class="location-text" style="font-weight: 600;">Amenities</p>
+                                    <p style="font-size: 0.95rem; color: rgba(61, 40, 23, 0.7);">
+                                        Free WiFi • Air Conditioned • Free Parking<br>
+                                        Wheelchair Accessible • Student Friendly
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="location-button" style="margin-top: 2rem; font-size: 1.1rem; padding: 1rem 2rem;" 
+                                onclick="trackGetDirections(); window.open('https://www.google.com/maps/search/Balibago+Angeles+City+System+Plus', '_blank')">
+                            🗺️ Get Directions to Balibago
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HOW TO FIND US -->
+            <div style="margin-top: 4rem; max-width: 900px; margin-left: auto; margin-right: auto;">
+                <h2 style="text-align: center; color: var(--chocolate-brown); margin-bottom: 2rem; font-size: 1.75rem;">
+                    How to Find Our Coffee Shop in Balibago
+                </h2>
                 
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                    <div style="padding: 1.5rem; background: white; border-radius: 0.75rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <h3 style="color: var(--terracotta); margin-bottom: 0.75rem; font-size: 1.1rem;">
+                            🎓 From System Plus College
+                        </h3>
+                        <p style="font-size: 0.95rem; color: rgba(61, 40, 23, 0.8); line-height: 1.6;">
+                            Just a <strong>2-minute walk</strong> from campus main gate. 
+                            Exit System Plus, turn right, walk towards Abacan Bridge. 
+                            We're on the left side before the bridge.
+                        </p>
+                    </div>
+
+                    <div style="padding: 1.5rem; background: white; border-radius: 0.75rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <h3 style="color: var(--terracotta); margin-bottom: 0.75rem; font-size: 1.1rem;">
+                            🌉 From Abacan Bridge
+                        </h3>
+                        <p style="font-size: 0.95rem; color: rgba(61, 40, 23, 0.8); line-height: 1.6;">
+                            We're <strong>right beside</strong> Abacan Bridge on the 
+                            Balibago side. Look for the large Sari-Sari Bean sign 
+                            with coffee cup logo.
+                        </p>
+                    </div>
+
+                    <div style="padding: 1.5rem; background: white; border-radius: 0.75rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <h3 style="color: var(--terracotta); margin-bottom: 0.75rem; font-size: 1.1rem;">
+                            ✈️ From Clark Freeport
+                        </h3>
+                        <p style="font-size: 0.95rem; color: rgba(61, 40, 23, 0.8); line-height: 1.6;">
+                            <strong>10-minute drive</strong> via MacArthur Highway. 
+                            Head to Balibago, look for System Plus College landmark. 
+                            We're near the college beside Abacan Bridge.
+                        </p>
+                    </div>
+
+                    <div style="padding: 1.5rem; background: white; border-radius: 0.75rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <h3 style="color: var(--terracotta); margin-bottom: 0.75rem; font-size: 1.1rem;">
+                            🚗 Parking Information
+                        </h3>
+                        <p style="font-size: 0.95rem; color: rgba(61, 40, 23, 0.8); line-height: 1.6;">
+                            <strong>Free parking</strong> available in front of our shop 
+                            and nearby street parking in Balibago. Easy access from 
+                            main roads in Angeles City.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WHY VISIT -->
+            <div style="margin-top: 4rem; padding: 3rem 2rem; background: linear-gradient(135deg, var(--calamansi-gold), var(--terracotta)); border-radius: 1rem; text-align: center; color: white;">
+                <h2 style="color: white; margin-bottom: 1.5rem; font-size: 2rem;">
+                    Why Choose Our Coffee Shop in Angeles City?
+                </h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 2rem; max-width: 1000px; margin-left: auto; margin-right: auto;">
+                    <div>
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">☕</div>
+                        <h3 style="color: white; margin-bottom: 0.5rem;">Best Filipino Coffee</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.95;">
+                            Authentic Barako & Arabica from Batangas, Benguet, and Sagada
+                        </p>
+                    </div>
+                    <div>
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">📍</div>
+                        <h3 style="color: white; margin-bottom: 0.5rem;">Prime Location</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.95;">
+                            2-min from System Plus, beside Abacan Bridge, heart of Balibago
+                        </p>
+                    </div>
+                    <div>
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">💻</div>
+                        <h3 style="color: white; margin-bottom: 0.5rem;">Perfect for Work</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.95;">
+                            Free fast WiFi, comfortable seats, A/C - ideal for studying or remote work
+                        </p>
+                    </div>
+                    <div>
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">⭐</div>
+                        <h3 style="color: white; margin-bottom: 0.5rem;">Top Rated</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.95;">
+                            4.9 stars from 187+ reviews - best coffee shop in Balibago
+                        </p>
+                    </div>
+                </div>
+                <div style="margin-top: 2rem;">
+                    <a href="menu.html" style="display: inline-block; background: white; color: var(--terracotta); padding: 1rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.1rem;">
+                        View Our Menu →
+                    </a>
+                </div>
             </div>
         </div>
     </section>
+    </main>
 
-    
-    <div id="product-modal" class="modal">
-        <div class="modal-content">
-            <span class="modal-close">&times;</span>
-            <div class="modal-body" id="modal-body">
-                
-            </div>
-        </div>
-    </div>
-
-   </main>
-
-    
     <footer id="contact" class="footer">
         <div class="container">
             <div class="footer-grid">
-               
                 <div class="footer-brand">
                     <div class="footer-logo">
                         <div class="logo-icon">☕</div>
                         <div class="logo-text">
-                            <h3>Sari-Sari</h3>
-                            <p>Filipino Coffee</p>
+                            <h3>Sari-Sari Bean</h3>
+                            <p>Angeles City</p>
                         </div>
                     </div>
                     <p class="footer-description">
-                        Celebrating Filipino coffee heritage with every cup. Brewed with 
-                        passion, served with love.
+                        <strong>Best coffee shop in Balibago, Angeles City</strong> near System Plus College 
+                        beside Abacan Bridge. Authentic Filipino coffee since 2024.
                     </p>
-                    <p class="footer-salamat">Salamat sa inyong bisita!</p>
                 </div>
 
-                 
                 <div>
                     <h4 class="footer-title">Quick Links</h4>
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="menu.html">Menu</a></li>
-                        <li><a href="locations.html">Locations</a></li>
-                        <li><a href="cart.html">My Cart</a></li>
+                        <li><a href="locations.html">Visit Balibago</a></li>
                     </ul>
                 </div>
 
-                
                 <div>
                     <h4 class="footer-title">Contact</h4>
                     <ul class="footer-contact">
-                        <li>Email: hello@sarisari.ph</li>
-                        <li>Phone: +63 2 1234 5678</li>
-                        <li>Hours: Mon-Sun, 7AM-10PM</li>
+                        <li><strong>Balibago, Angeles City</strong></li>
+                        <li>📞 +63 45 678 9123</li>
+                        <li>🕒 7AM-10PM Daily</li>
                     </ul>
                 </div>
 
-                
                 <div class="newsletter">
                     <h4 class="footer-title">Stay Connected</h4>
-                    <p class="newsletter-text">
-                        Get updates on new blends and special offers
-                    </p>
                     <form class="newsletter-form" id="newsletter-form">
-                        <input type="email" placeholder="Your email" class="newsletter-input" required>
+                        <input type="email" placeholder="Email" class="newsletter-input" required>
                         <button type="submit" class="newsletter-button">✉️</button>
                     </form>
-
-                    <div class="social-links">
-                        <a href="#" class="social-link">f</a>
-                        <a href="#" class="social-link">📷</a>
-                        <a href="#" class="social-link">🐦</a>
-                    </div>
                 </div>
             </div>
-
             <div class="footer-bottom">
-                <p>© <span id="year"></span> Sari-Sari Filipino Coffee. All rights reserved.</p>
-                <div class="footer-made-with">
-                    <span>Made with</span>
-                    <span class="heart">❤️</span>
-                    <span>in the Philippines</span>
-                </div>
+                <p>© <span id="year"></span> Sari-Sari Bean - Balibago, Angeles City</p>
             </div>
         </div>
     </footer>
-    <script src="app.js"></script>
-            <script>
-                document.getElementById('year').textContent = new Date().getFullYear();
 
-                
-                document.getElementById('newsletter-form').addEventListener('submit', function(event) {
-                    event.preventDefault();
-                    alert('Thank you for subscribing!');
-                    this.reset();
-                });
-            </script>
-    </body>
+    <script src="app.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you!');
+            this.reset();
+        });
+    </script>
+
+    <!-- LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CoffeeShop",
+      "name": "Sari-Sari Bean Coffee Shop",
+      "image": "https://saribeans.store/images/exterior.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Balibago, near System Plus College Foundation, beside Abacan Bridge",
+        "addressLocality": "Angeles City",
+        "addressRegion": "Pampanga",
+        "postalCode": "2009",
+        "addressCountry": "PH"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 15.1449,
+        "longitude": 120.5910
+      },
+      "telephone": "+63-45-678-9123",
+      "openingHours": "Mo-Su 07:00-22:00",
+      "priceRange": "₱₱"
+    }
+    </script>
+</body>
 </html>
