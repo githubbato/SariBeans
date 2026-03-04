@@ -11,8 +11,7 @@
             'send_page_view': true,
             'cookie_flags': 'SameSite=None;Secure'
         });
-        
-        // Custom event tracking for local SEO
+
         function trackGetDirections() {
             gtag('event', 'get_directions', {
                 'location_name': 'Balibago',
@@ -32,48 +31,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- PRIMARY SEO Meta Tags - OPTIMIZED FOR ANGELES CITY -->
-    <meta name="description" content="Best coffee shop in Balibago, Angeles City near System Plus College & Abacan Bridge. Authentic Filipino coffee, free WiFi, A/C. Open 7AM-10PM daily. ☕">
-    <meta name="keywords" content="coffee shop angeles city, coffee shop balibago, coffee shop near system plus, coffee near abacan bridge, best coffee angeles city, filipino coffee balibago, cafe angeles pampanga, coffee near me angeles">
+    <!-- PRIMARY SEO Meta Tags - OPTIMIZED FOR BLOG -->
+    <meta name="description" content="Discover the journey of Sari-Sari Bean's coffee business in Angeles City. Read about our Philippine coffee sourcing, roasting process, and coffee culture in Balibago, Pampanga.">
+    <meta name="keywords" content="coffee blog angeles city, filipino coffee journey, coffee business pampanga, barako coffee blog, sari sari bean story, coffee shop blog philippines, coffee culture angeles, coffee roasting blog">
     
-    <!-- GEO-TARGETING Meta Tags - CRITICAL FOR LOCAL SEO -->
     <meta name="geo.region" content="PH-PAM">
     <meta name="geo.placename" content="Balibago, Angeles City">
     <meta name="geo.position" content="15.1449;120.5910">
     <meta name="ICBM" content="15.1449, 120.5910">
     
-    <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="Coffee Shop in Balibago Angeles City | Sari-Sari Bean near System Plus">
-    <meta property="og:description" content="Best coffee shop in Balibago, Angeles City near System Plus College & Abacan Bridge. Authentic Filipino coffee, free WiFi. Visit us today!">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1544421604-4bfaaeba6830?w=1200">
-    <meta property="og:url" content="https://saribeans.store/">
+    <meta property="og:title" content="Sari-Sari Bean Coffee Blog | Coffee Journey in Angeles City">
+    <meta property="og:description" content="Explore our coffee business journey in Balibago, Angeles City. From bean to cup - discover the story behind Philippines' finest coffee shop near System Plus College.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200">
+    <meta property="og:url" content="https://saribeans.store/blog.html">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_PH">
     <meta property="og:site_name" content="Sari-Sari Bean - Angeles City">
     
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Coffee Shop in Balibago Angeles City | Sari-Sari Bean">
-    <meta name="twitter:description" content="Best coffee in Angeles City near System Plus College & Abacan Bridge">
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1544421604-4bfaaeba6830?w=1200">
+    <meta name="twitter:title" content="Sari-Sari Bean Coffee Blog | Coffee Journey Angeles City">
+    <meta name="twitter:description" content="Explore our coffee business journey in Balibago, Angeles City. Discover the story behind Philippines' finest coffee shop.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200">
     
-    <!-- Canonical & Robots -->
-    <link rel="canonical" href="https://saribeans.store/">
+    <link rel="canonical" href="https://saribeans.store/blog.html">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     
-    <!-- OPTIMIZED Title Tag for Local Search -->
-    <title>Coffee Shop in Balibago Angeles City | Sari-Sari Bean near System Plus</title>
+    <title>Coffee Blog | Sari-Sari Bean - Coffee Journey in Angeles City, Pampanga</title>
     
-    <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Optimized CSS Loading -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="preload" href="styles.css" as="style">
 
-    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -93,13 +83,13 @@
             </a>
 
             <nav class="nav" aria-label="Main navigation">
-                <a href="index.html" aria-current="page">Home</a>
+                <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="menu.html">Menu</a>
                 <a href="locations.html">Visit Balibago</a>
                 <a href="contact.html">Contact</a>
                 <a href="cart.html" aria-label="Shopping Cart">🛒 Cart</a>
-                <a href="blog.html">Blog</a>
+                <a href="blog.html" aria-current="page">Blog</a>
             </nav>
 
             <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle mobile menu" aria-expanded="false">
@@ -119,12 +109,231 @@
     </header>
 
     <main>
+        <section class="blog-hero">
+            <div class="container">
+                <div class="blog-hero-content">
+                    <div class="blog-hero-badge">☕ Coffee Blog</div>
+                    <h1 class="blog-hero-title">Our <span>Coffee Journey</span> in Angeles City</h1>
+                    <p class="blog-hero-description">
+                        Discover the story behind Sari-Sari Bean - from sourcing the finest Philippine coffee beans 
+                        to serving the best cup in Balibago, Angeles City. Follow our coffee business journey and 
+                        learn about Filipino coffee culture in Pampanga.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-    
+        <section class="blog-section">
+            <div class="container">
+                <div class="blog-grid">
+                    <a href="blog-posts/blog-post-1.html" class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="/images/coffee-beans-with-colorful-line-art.jpg" alt="Coffee beans journey" loading="lazy">
+                            <span class="blog-card-category">Our Journey</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-card-meta">
+                                <span>📅 March 1, 2026</span>
+                                <span>⏱️ 3 min read</span>
+                            </div>
+                            <h2 class="blog-card-title">From Bean to Cup: Our Coffee Journey at Sari-Sari Bean</h2>
+                            <p class="blog-card-excerpt">Every great cup of coffee tells a story. Join us as we trace our coffee's journey from the misty highlands of Benguet to your favorite table at our Balibago coffee shop.</p>
+                            <div class="blog-card-footer">
+                                <div class="blog-card-author"><div class="blog-card-author-avatar">MJ</div><span>Michael Usi Jr</span></div>
+                                <span class="blog-card-read-more">Read More →</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="blog-posts/blog-post-2.html" class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="/images/espresso-shot-dripping-with-colorful-line-art.jpg" alt="Philippine coffee farmers" loading="lazy">
+                            <span class="blog-card-category">Sourcing</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-card-meta">
+                                <span>📅 March 1, 2026</span>
+                                <span>⏱️ 2 min read</span>
+                            </div>
+                            <h2 class="blog-card-title">Why We Source Philippine Coffee: Supporting Local Farmers</h2>
+                            <p class="blog-card-excerpt">We believe in the power of local. Discover why we chose to source our beans from Philippine farmers in Benguet, Sagada, and Batangas.</p>
+                            <div class="blog-card-footer">
+                                <div class="blog-card-author"><div class="blog-card-author-avatar">MJ</div><span>Michael Usi Jr</span></div>
+                                <span class="blog-card-read-more">Read More →</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="blog-posts/blog-post-3.html" class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="/images/portafilter-with-ground-beans-with-ss-background.jpg" alt="Filipino Barako coffee" loading="lazy">
+                            <span class="blog-card-category">Coffee Guide</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-card-meta">
+                                <span>📅 March 1, 2026</span>
+                                <span>⏱️ 2 min read</span>
+                            </div>
+                            <h2 class="blog-card-title">The Art of Filipino Barako: A Heritage Coffee Experience</h2>
+                            <p class="blog-card-excerpt">Barako is more than just coffee—it's a Philippine heritage. Learn about this bold, aromatic coffee variety and why it's a must-try.</p>
+                            <div class="blog-card-footer">
+                                <div class="blog-card-author"><div class="blog-card-author-avatar">IT</div><span>Isaiah Talens</span></div>
+                                <span class="blog-card-read-more">Read More →</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="blog-posts/blog-post-4.html" class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="https://images.unsplash.com/photo-1504630083234-14187a9df0f5?w=600&h=400&fit=crop" alt="Coffee roasting process" loading="lazy">
+                            <span class="blog-card-category">Behind the Scenes</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-card-meta">
+                                <span>📅 March 1, 2026</span>
+                                <span>⏱️ 2 min read</span>
+                            </div>
+                            <h2 class="blog-card-title">How We Roast: Small Batch Excellence in Angeles City</h2>
+                            <p class="blog-card-excerpt">Quality takes time. Explore our small-batch roasting process and how we ensure every bean is perfectly roasted.</p>
+                            <div class="blog-card-footer">
+                                <div class="blog-card-author"><div class="blog-card-author-avatar">IT</div><span>Isaiah Talens</span></div>
+                                <span class="blog-card-read-more">Read More →</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="blog-posts/blog-post-5.html" class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?w=600&h=400&fit=crop" alt="Pandan Latte and Ube Latte" loading="lazy">
+                            <span class="blog-card-category">Menu Stories</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-card-meta">
+                                <span>📅 March 2, 2026</span>
+                                <span>⏱️ 3 min read</span>
+                            </div>
+                            <h2 class="blog-card-title">Our Signature Latte Creations: From Pandan to Ube</h2>
+                            <p class="blog-card-excerpt">Discover the stories behind our famous Pandan Latte and Ube Latte—our unique Filipino-inspired coffee creations.</p>
+                            <div class="blog-card-footer">
+                                <div class="blog-card-author"><div class="blog-card-author-avatar">JL</div><span>Joshua Lomocso</span></div>
+                                <span class="blog-card-read-more">Read More →</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="blog-posts/blog-post-6.html" class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=600&h=400&fit=crop" alt="Sari-Sari Bean location" loading="lazy">
+                            <span class="blog-card-category">Location</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-card-meta">
+                                <span>📅 March 2, 2026</span>
+                                <span>⏱️ 3 min read</span>
+                            </div>
+                            <h2 class="blog-card-title">The Perfect Coffee Spot: Why Our Balibago Location Works</h2>
+                            <p class="blog-card-excerpt">Located near System Plus College and beside Abacan Bridge, our coffee shop serves students, professionals, and families in Angeles City.</p>
+                            <div class="blog-card-footer">
+                                <div class="blog-card-author"><div class="blog-card-author-avatar">JL</div><span>Joshua Lomocso</span></div>
+                                <span class="blog-card-read-more">Read More →</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="blog-posts/blog-post-7.html" class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?w=600&h=400&fit=crop" alt="Coffee culture in Pampanga" loading="lazy">
+                            <span class="blog-card-category">Community</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-card-meta">
+                                <span>📅 March 3, 2026</span>
+                                <span>⏱️ 3 min read</span>
+                            </div>
+                            <h2 class="blog-card-title">Coffee Culture in Pampanga: A Growing Community</h2>
+                            <p class="blog-card-excerpt">The coffee scene in Angeles City and Pampanga is thriving. Learn how we're part of this growing community of coffee enthusiasts.</p>
+                            <div class="blog-card-footer">
+                                <div class="blog-card-author"><div class="blog-card-author-avatar">GP</div><span>Gian Pangilinan</span></div>
+                                <span class="blog-card-read-more">Read More →</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="blog-posts/blog-post-8.html" class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600&h=400&fit=crop" alt="Sustainable coffee practices" loading="lazy">
+                            <span class="blog-card-category">Sustainability</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-card-meta">
+                                <span>📅 March 3, 2026</span>
+                                <span>⏱️ 3 min read</span>
+                            </div>
+                            <h2 class="blog-card-title">Sustainable Coffee Practices at Sari-Sari Bean</h2>
+                            <p class="blog-card-excerpt">We're committed to sustainable coffee sourcing and eco-friendly operations. Discover our green initiatives serving Angeles City responsibly.</p>
+                            <div class="blog-card-footer">
+                                <div class="blog-card-author"><div class="blog-card-author-avatar">GP</div><span>Gian Pangilinan</span></div>
+                                <span class="blog-card-read-more">Read More →</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="blog-posts/blog-post-9.html" class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&h=400&fit=crop" alt="Sari-Sari Bean baristas" loading="lazy">
+                            <span class="blog-card-category">Team</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-card-meta">
+                                <span>📅 March 3, 2026</span>
+                                <span>⏱️ 2 min read</span>
+                            </div>
+                            <h2 class="blog-card-title">Behind the Scenes: Our Baristas' Story</h2>
+                            <p class="blog-card-excerpt">Meet the talented team behind your favorite coffee at Sari-Sari Bean. Our baristas share their passion for coffee.</p>
+                            <div class="blog-card-footer">
+                                <div class="blog-card-author"><div class="blog-card-author-avatar">MT</div><span>Mary Tingin</span></div>
+                                <span class="blog-card-read-more">Read More →</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="blog-posts/blog-post-10.html" class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&h=400&fit=crop" alt="Future of Filipino coffee" loading="lazy">
+                            <span class="blog-card-category">Vision</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-card-meta">
+                                <span>📅 March 3, 2026</span>
+                                <span>⏱️ 2 min read</span>
+                            </div>
+                            <h2 class="blog-card-title">The Future of Filipino Coffee: Our Vision for Angeles City</h2>
+                            <p class="blog-card-excerpt">As we look ahead, we're excited about bringing more Philippine coffee varieties and creating jobs in Pampanga. Here's our vision.</p>
+                            <div class="blog-card-footer">
+                                <div class="blog-card-author"><div class="blog-card-author-avatar">MT</div><span>Mary Tingin</span></div>
+                                <span class="blog-card-read-more">Read More →</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-newsletter">
+            <div class="container">
+                <div class="blog-newsletter-content">
+                    <h2 class="blog-newsletter-title">Stay Updated with Our Coffee Journey</h2>
+                    <p class="blog-newsletter-description">Subscribe to our blog newsletter and get the latest stories about Philippine coffee, new menu items, and exclusive promotions at our Angeles City coffee shop.</p>
+                    <form class="blog-newsletter-form" id="blog-newsletter-form">
+                        <input type="email" class="blog-newsletter-input" placeholder="Enter your email address" required aria-label="Email for newsletter">
+                        <button type="submit" class="blog-newsletter-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
-   
-    <footer id="contact" class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
@@ -135,10 +344,7 @@
                             <p style="margin: 0;">Angeles City</p>
                         </div>
                     </div>
-                    <p class="footer-description">
-                        <strong>Best coffee shop in Balibago, Angeles City</strong> near System Plus College 
-                        Foundation beside Abacan Bridge. Serving authentic Philippine coffee since 2024.
-                    </p>
+                    <p class="footer-description"><strong>Best coffee shop in Balibago, Angeles City</strong> near System Plus College Foundation beside Abacan Bridge. Serving authentic Philippine coffee since 2024.</p>
                     <p class="footer-salamat">Salamat sa inyong bisita! 🇵🇭</p>
                 </div>
 
@@ -169,9 +375,7 @@
 
                 <div class="newsletter">
                     <h4 class="footer-title">Stay Connected</h4>
-                    <p class="newsletter-text">
-                        Get updates on new drinks and promotions at our Angeles City location
-                    </p>
+                    <p class="newsletter-text">Get updates on new drinks and promotions at our Angeles City location</p>
                     <form class="newsletter-form" id="newsletter-form" aria-label="Newsletter signup">
                         <input type="email" placeholder="Your email" class="newsletter-input" required aria-label="Email address">
                         <button type="submit" class="newsletter-button" aria-label="Subscribe">✉️</button>
@@ -195,39 +399,38 @@
         </div>
     </footer>
 
-    <!-- JavaScript -->
     <script src="app.js"></script>
-    <script>      
+    <script>
         document.getElementById('year').textContent = new Date().getFullYear();
         
         document.getElementById('newsletter-form').addEventListener('submit', function(event) {
             event.preventDefault();
             const email = this.querySelector('.newsletter-input').value;
-            
             if (typeof gtag !== 'undefined') {
-                gtag('event', 'newsletter_signup', {
-                    'method': 'footer_form',
-                    'location': 'Angeles City'
-                });
+                gtag('event', 'newsletter_signup', { 'method': 'footer_form', 'location': 'Angeles City' });
             }
-            
             alert('Thank you for subscribing! We\'ll send Angeles City updates to ' + email);
+            this.reset();
+        });
+        
+        document.getElementById('blog-newsletter-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const email = this.querySelector('.blog-newsletter-input').value;
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'blog_newsletter_signup', { 'method': 'blog_page', 'location': 'Angeles City' });
+            }
+            alert('Thank you for subscribing to our blog!');
             this.reset();
         });
     </script>
     
-    <!-- ENHANCED LocalBusiness Schema with Balibago location -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "CafeOrCoffeeShop",
       "name": "Sari-Sari Bean Coffee Shop",
       "alternateName": "Sari-Sari Bean Balibago",
-      "image": [
-        "https://saribeans.store/images/exterior.jpg",
-        "https://saribeans.store/images/interior.jpg",
-        "https://saribeans.store/images/coffee.jpg"
-      ],
+      "image": "https://saribeans.store/images/coffee.jpg",
       "url": "https://saribeans.store",
       "telephone": "+63-45-678-9123",
       "email": "hello@saribeans.store",
@@ -245,24 +448,6 @@
         "latitude": 15.1449,
         "longitude": 120.5910
       },
-      "areaServed": [
-        {
-          "@type": "City",
-          "name": "Angeles City"
-        },
-        {
-          "@type": "Place",
-          "name": "Balibago",
-          "containedInPlace": {
-            "@type": "City",
-            "name": "Angeles City"
-          }
-        },
-        {
-          "@type": "City",
-          "name": "Clark Freeport Zone"
-        }
-      ],
       "openingHoursSpecification": [{
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
@@ -270,95 +455,21 @@
         "closes": "22:00"
       }],
       "servesCuisine": "Filipino Coffee",
-      "menu": "https://saribeans.store/menu.html",
-      "acceptsReservations": "False",
-      "paymentAccepted": "Cash, Credit Card, GCash, PayMaya",
-      "currenciesAccepted": "PHP",
-      "amenityFeature": [
-        {
-          "@type": "LocationFeatureSpecification",
-          "name": "Free WiFi",
-          "value": true
-        },
-        {
-          "@type": "LocationFeatureSpecification",
-          "name": "Air Conditioning",
-          "value": true
-        },
-        {
-          "@type": "LocationFeatureSpecification",
-          "name": "Free Parking",
-          "value": true
-        },
-        {
-          "@type": "LocationFeatureSpecification",
-          "name": "Wheelchair Accessible",
-          "value": true
-        }
-      ],
-      "hasMap": "https://www.google.com/maps/search/Balibago+Angeles+City+System+Plus",
-      "sameAs": [
-        "https://www.facebook.com/saribeanangeles",
-        "https://www.instagram.com/saribeanangeles"
-      ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "187",
-        "bestRating": "5"
-      },
-      "keywords": "coffee shop angeles city, coffee shop balibago, coffee near system plus, filipino coffee angeles, best coffee pampanga",
-      "nearbyPlaces": [
-        {
-          "@type": "EducationalOrganization",
-          "name": "System Plus College Foundation"
-        },
-        {
-          "@type": "Bridge",
-          "name": "Abacan Bridge"
-        }
-      ]
+      "keywords": "coffee shop angeles city, coffee blog, filipino coffee, pampanga coffee"
     }
     </script>
     
-    <!-- Organization Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Sari-Sari Bean Coffee Shop",
-      "url": "https://saribeans.store",
-      "logo": "https://saribeans.store/images/logo.png",
-      "description": "Best coffee shop in Balibago, Angeles City. Located near System Plus College Foundation beside Abacan Bridge. Serving authentic Filipino coffee.",
-      "foundingDate": "2024",
-      "email": "hello@saribeans.store",
-      "telephone": "+63-45-678-9123",
-      "slogan": "Angeles City's Premier Filipino Coffee Experience",
-      "location": {
-        "@type": "Place",
-        "name": "Balibago, Angeles City",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Near System Plus College Foundation, beside Abacan Bridge",
-          "addressLocality": "Angeles City",
-          "addressRegion": "Pampanga",
-          "addressCountry": "PH"
-        }
+      "@type": "Blog",
+      "name": "Sari-Sari Bean Coffee Blog",
+      "description": "Discover the journey of Sari-Sari Bean's coffee business in Angeles City, Philippines.",
+      "url": "https://saribeans.store/blog.html",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Sari-Sari Bean Coffee Shop"
       }
-    }
-    </script>
-
-    <!-- Breadcrumb Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://saribeans.store/"
-      }]
     }
     </script>
 
